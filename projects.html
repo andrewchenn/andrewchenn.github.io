@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOL</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQ0lEQVRIie2TPS8EURSG33OHbcTM2CBERhQahWj8AI1GkKglCqVf4S8olLQaX83qMYnKL6DSiMzHvTMk25h7FOwkdsfO7M5ISPYt7z33ec7JyQX+e6hoYRiGs1oYFwAgdLJVr9efKhOE4duiFkkDgAMAYDwz8caEbd/nvRV5BYFSq1okbgr/bGuaQNdeHK+XEgQy3mVQA4CZcT1Cmi/9KNrrWcDM5Mlon4mPAAx3eW+AcejL6ICZM1kdO2DmWqDiYxC2u3WWgTptvo7uOA41fxQopcbeIc4BXukNnuauJmjTNE2/QyClnEtIXAFY6BPeyqMmrE1a1gPwtYMXKZcSIrcCOADMC8aNp9RyKjBInAE0UwG8lSkCnQAZS/ZVxGXI47b1jZn70cpmqGhhe2dFJ/31CQaCPyhggtt+RoTbfusGyc0HuVFsNk2c4qYAAAAASUVORK5CYII=">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+    <script> //script for mobile navbar transition.
         $(document).ready(function(){
             $("#menuCta").click(function(){
                 $("#navMenu").fadeToggle("fast");
@@ -20,8 +21,6 @@
         })
     </script>
 </head>
-
-
 <body>
     <div class="bodyWrap">
         <img class="bgImage" src="images/6024826.jpg" alt="Background Image">
@@ -33,17 +32,17 @@
                     <div class="mobileNavPlaceholder"></div>
                     <nav class= "desktopNavbar">
                         <ul class="primaryNavDesktop">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="football.html">Football</a></li>
-                            <li class= "current"><a href="projects.html">Projects</a></li>
-                            <li><a href="setup.html">Setup</a></li>
+                            <li><a href="projects.html">Projects</a></li>
                         </ul>
                     </nav>
                     <nav class= "menu" id="navMenu">
                         <img id="menuCloseCta" class="menuClose" src="images/5299154331543238955.svg" alt="menuOpenIcon">
                         <ul class="primaryNav">
-                            <li> <a href="football.html">Football</a></li>
-                            <li class= "current"><a href="projects.html">Projects</a></li>
-                            <li><a href="setup.html">Setup</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="football.html">Football</a></li>
+                            <li><a href="projects.html">Projects</a></li>
                         </ul>
                         <ul class="socials">
                             <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
@@ -53,8 +52,7 @@
                     </nav>
                 </div>
             </section>
-
-            
+            <hr class="headerDivider">
             <section class="hero">
                 <div class="container">
                     <div class="leftCol">
@@ -63,13 +61,12 @@
                             A footballer, student and avid tech enthusiast based in Newcastle, Australia.
                             I currently attend Merewether High School as a year 9 student and I love learning new 
                             things everyday. When I'm not in school, I'll either be playing football, where I'm
-                            apart of the Newcastle Jets Academy, or I will be at my desk browsing new technologies 
+                            apart of the Newcastle Jets Academy and Valentine Pheonix FC, or I will be at my desk browsing new technologies 
                             and coding away on my keyboard.
                         </p>
                     </div>
                 </div>  
             </section>
-        
             <section class="contact">
                 <div class="container">
                     <div class="leftContact">
@@ -92,22 +89,23 @@
                     </div>
                 </div>
             </section>
+            <hr>
+            <section class="bodyFooter">
+                <div class="container">
+                    <div class="footerLeft">
+                        <p>@2021 Andrew Chen. All Rights Reserved</p>
+                    </div>
+                    <div class="footerRight">
+                        <ul class="socials">
+                            <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                            <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                            <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>    
     </div> 
 
 </body>
-<footer class="footer">
-    <div class="container">
-        <div class="footerLeft">
-            <p>@2021 Andrew Chen. All Rights Reserved</p>
-        </div>
-        <div class="footerRight">
-            <ul class="socials">
-                <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
-                <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
-                <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
 </html>
