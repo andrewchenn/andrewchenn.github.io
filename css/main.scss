@@ -1,0 +1,689 @@
+:root {
+    --primaryColour: #BEBEBE;
+}
+body{
+    background-color: #1b1c1c;
+    font-family: "Readex Pro";
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.bodyWrap {
+    overflow: hidden;
+    position: relative;
+  }
+.bgImage {
+    opacity: 0.11;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+.bodyContent {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mobileNavbar {
+    padding-bottom: 20px;
+    place-content: space-between;
+    .container{
+        display: flex;
+        align-content: start;
+        place-content: space-between;
+    }
+    .menuOpen{
+        padding-top: 6px;
+        height: 14.69px;
+        width: 26.335px;
+        color: var(--primaryColour);
+        cursor: pointer;           
+    }
+    .menuClose{
+        margin: 0%;
+        padding: 0%;
+        width: 40px;
+        height: 40px;
+        color: white;
+        cursor: pointer; 
+    }
+    .logo{
+        font-weight: bold;
+        color: white;
+        font-size: 19pt;
+        text-align: center;
+        display: center;
+    }
+    .mobileNavPlaceholder{
+        padding-top: 6px;
+        height: 14.69px;
+        width: 26.335px;
+    }
+    .desktopNavbar {
+        display: none
+    }
+    nav.menu{
+        display: none;  
+    }
+
+    nav.menu-btn{
+        display: block;
+    }
+    nav.menu{
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        width: 66%;
+        left: 0;
+        top: 0;
+        background: #1a1d20;
+        padding: 1em;  
+    }
+    ul.primaryNav{
+        padding-left: 10px;
+    }
+    ul.socials{
+        margin-top: 50px;
+        padding-left: 0px;
+        display: flex;      
+        .instagramIcon{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            padding: 5px;
+            height: 40px;
+            width: 40px;
+        }
+        .facebookIcon{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+        }
+        .snapchatIcon{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+        }
+    }
+    li{
+        list-style-type: none;
+        a{
+            display: block;
+            padding: 10px;
+            margin-left: -10px;
+            font-size: 20pt;
+            color: white;
+        }
+        a:hover{
+            background: black;
+            border-radius: 10px;
+        }
+    }
+    
+}
+.hero{
+    .header{
+        color: white;
+        text-align: center;
+        font-size: 30pt;
+        margin-top: 20px;
+    }
+    .videoHeader{
+        display: flex;
+        font-size: 23pt;
+        margin-top: 10px;
+        color: white;
+        h1{
+            padding-right: 30px;
+            align-self: center;
+            margin: -10px auto 20px;
+        }
+        i{                                  
+            color: var(--primaryColour);
+        }
+        i:hover{
+            cursor: pointer;
+            color: white;
+        }
+    }
+    .footballHeroContainer{
+        display: block;
+        align-content: center;
+        .leftCol{
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 57%;
+                height: auto;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+        .rightCol{
+            img{
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 84%;
+                height: 56.8%;
+                border-radius: 12px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+    .heading{
+        margin-top: 50px;
+        color:white;
+        margin-bottom: 10px;
+        font-size: 25pt;
+    }
+    .text{
+        margin-top: 0;
+        color: var(--primaryColour);
+        font-size: 15pt;
+        margin-bottom: 40px;
+    }
+}
+.videosSection{
+    h2{
+        color: white;
+        grid-column-start: 1;
+        justify-self: center;
+    }
+    .crossesSection, .crossContainer{
+        display: grid;
+    }
+    .shotStoppingSection, .shotPage1, .shotPage2{
+        display: grid;
+    }
+    .onevOneSection, .onevOneContainer{
+        display: grid;
+    }
+    .dots{
+        justify-self: center;
+        margin-top: 10px;
+        grid-row-start: 3;
+        grid-column: 1;
+        color: var(--primaryColour);
+        .fa-circle{
+            margin-left: 3px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    .current{
+        color: white;
+    }
+    .hidden{
+        display: none;
+    }
+    .thumbnailContainer{
+        justify-self: center;
+        grid-column-start: 1;
+        position: relative;
+        .thumbnail{
+            object-fit: cover;
+            height: 185px;
+            width: 330px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .fa-play-circle{
+            position: absolute;
+            top: 50px;
+            right: 120px;
+            cursor: pointer;
+            font-size: 90px;
+            color: white;
+        }
+        .fa-play-circle:hover{
+            color: var(--primaryColour);
+        }
+    }
+}
+.footballInfo {
+    .infoHeading{
+        color: white;
+        font-size: 25pt;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    .infoText {
+        color: var(--primaryColour);
+        margin-bottom: 5px;
+    }
+    .moreText{
+        display: none;
+    }
+    .infoText.showMore .moreText{
+        display: inline;
+    }
+    .moreInfoButton{
+        border-radius: 15px;
+        display: block;
+        margin: 10px auto 0 auto;
+        height: 8%;
+        width: 8%;
+        cursor: pointer;
+    }
+    .moreInfoButton.rotateButton{
+        transform: rotate(180deg);
+    }
+}
+.videoButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    button{
+        background: var(--primaryColour);
+        width: 60%;
+        height: 3em;
+        border: none;
+        border-radius: 20px;
+        font-family: Readex Pro;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    button:hover{
+        background: white;
+        
+    }
+}
+.contact{
+    .leftContact{
+        .profile{
+            height: 350px;
+            width: 318px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    .rightContact{
+        .formHeading{
+            display: flex;
+            place-content: center;
+            margin-top: 33px;
+            margin-bottom: 5px;
+            color:white;
+        }
+        .contactForm{
+            margin: auto;
+            margin-bottom: 25px;
+            label{
+                color: white;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 13pt;
+            }
+            input, textarea{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+                background-color: var(--primaryColour);
+                width: 99%;
+                margin-top: 7px;
+                margin-bottom: 20px;
+                padding: 5px 5px 10px 5px;
+                border-radius: 10px;
+                border: 1pt;
+                box-shadow: 2px 2px 5px black;
+                resize: none;
+            }
+            input[type="submit"] {
+                display: block;
+                border-radius: 50px;
+                margin: auto;
+                background-color:white;
+                color: black;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                width: 90%;
+                padding: 15px;
+                cursor: pointer;
+            }
+        }   
+    }
+}
+hr.headerDivider{
+    display: none;
+}
+hr{
+    width: 92%;
+    border-width: 1pt;
+    margin-top: 60px;
+}
+footer, .bodyFooter{
+    font-family: "Readex Pro";
+    margin: 0;
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footerLeft{
+        color: var(--primaryColour);
+        text-align: center;
+        margin-top: 10px;
+        p{
+            margin-top: 0px;
+        }
+    }
+    .footerRight{
+        padding-left: 0px;
+        ul.socials{
+            padding-left: 0px;
+            display: flex;
+            place-content: center;
+            margin-bottom: 0;
+            margin-top: 25px;       
+            .instagramIcon{
+                padding-left: 10px;
+                height: 30px;
+                width: 30px;
+                padding-right: 10px;
+            }
+            .facebookIcon{
+                height: 30px;
+                width: 30px;
+                padding-right: 12px;
+            }
+            .snapchatIcon{
+                height: 30px;
+                width: 30px;
+            }
+        }
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .mobileNavbar{
+        margin-top: 10px;
+        nav.menu{
+            width: 300px;
+            font-size: 20px;
+            ul.primaryNav{
+                a{
+                    font-size: 35px;
+                    margin: 20px 0px 20px 0px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                }
+                a:hover{
+                    background: black;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .container{
+            display:flex;
+            margin-top: 20px;
+            place-content: normal;
+        }
+        .desktopNavbar{
+        display: block;
+        position: relative;
+        left: 20%;
+        }
+
+        img.menuOpen{
+            margin-right: 10px;
+            height: 36px;
+            width: 38px;
+            padding-top: 5px;
+        }
+        a.logo{
+            font-size: 25pt;
+            padding-top: 2px;
+            padding-left: 20px;
+        }
+        ul.primaryNavDesktop{
+            width:40%;
+            margin: 1px;
+            padding: 1px;
+            display: flex;
+            position: relative;
+            color: white;
+            a{
+                padding: 10px;
+                margin-top: -5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+            a:hover{
+                background: black;
+                border-radius: 10px;
+                border-color: black;
+            }
+        }
+    }
+    .hero{
+        .videoHeader{
+            font-size: 30px;
+            i{
+                margin-left: 35px;
+                font-size: 40px;
+                margin-top: -10px;
+            }
+            h1{
+                padding-right: 65px;
+            }
+        }
+        .footballHeroContainer{
+            display: flex;
+            place-items: space-between;
+            .leftCol{
+                width: 38%;
+                img{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 70%;
+                    height: auto;
+                }
+            }
+            .rightCol{
+                width: 62%;
+                margin-top: auto;
+                margin-bottom: auto;
+                img{
+                    display: block;
+                    width: 95%;
+                    height:auto;
+                }
+            }
+        } 
+    }
+    .videosSection{
+        .thumbnailContainer{
+            .thumbnail{
+                height: 296px;
+                width: 528px;
+            } 
+            .fa-play-circle{
+                top: 95px;
+                right: 213px;
+            }
+        }
+    }
+    .footballInfo{
+        .infoText{
+            font-size: 15pt;
+        }
+    }
+    .contact{
+        .rightContact{
+            margin-right: auto;
+            margin-left: auto;
+            width: 90%;
+            .contactForm{
+                input[type="submit"]{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px){
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .hero{  
+        .text{
+            margin-bottom: 60px;
+        }
+        .videoHeader{
+            i{
+                margin-left: 5px;
+            }
+        }
+        .footballHeroContainer{
+            .leftCol{
+                width: 40%;
+                img{
+                    width: 50%;
+                    margin-right: 50px;
+                    margin-left: 150px;
+                }
+            }
+            .rightCol{
+                width: 60%;
+                img{
+                    width: 75%;
+                }
+            }
+        }
+    }
+    .footballInfo{
+        .infoText{
+            font-size: 18pt;
+        }
+        .moreInfoButton{
+            height: 5%;
+            width: 5%;
+        }
+    }
+    .contact{
+        .container{
+            display: flex;
+            margin-bottom: 5%;
+        }  
+        .leftContact{
+            width:50%;
+            padding-top: 60px;
+            padding-left: 20px;
+        }
+        .rightContact{
+            width: 50%;
+            padding-right: 20px;
+            .formHeading{
+                margin-top: 15px;
+            }
+            .contactForm{
+                input[type="submit"] {
+                    background-color:var(--primaryColour);
+                }
+                input[type="submit"]:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .videoButton{
+        margin-top: 5em;
+        margin-bottom: 30px;
+        button{
+            width: 500px;
+        }
+    }
+    .videosSection{
+        h2{
+            justify-self: left;
+        }
+        .hidden{
+            display: inline;
+        }
+        .shotPage1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .shotPage2{
+            display: none;
+        }
+        .onevOneContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .crossContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .thumbnailContainer{
+            justify-self: left;
+            .thumbnail{
+                height: 185px;
+                width: 330px;
+            }
+            .fa-play-circle{
+                top: 50px;
+                right: 120px;
+            }
+        }
+        .dots{
+            display: none;
+        }
+    }
+    hr{
+        width: 1080px;
+        border-width: 1px;
+    }
+    hr.headerDivider{
+        display: block;
+        margin-bottom: 40px;
+        margin-top: -25px;
+    }
+    footer, .bodyFooter{
+        margin-bottom: 10px;
+        .container{
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+        }
+        .footerLeft{
+            width:50%;
+            p{
+                margin:0px;
+                text-align: left;
+            }
+        }
+        .footerRight{
+            width:50%;
+            ul.socials{
+                display: flex;
+                margin: 0px;
+                place-content: end;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1670px){
+    .contact{
+        margin-bottom: 7%;
+    }
+    .videoButton{
+        margin-bottom: 30px;
+    }
+}

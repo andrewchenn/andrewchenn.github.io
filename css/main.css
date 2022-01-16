@@ -1,0 +1,788 @@
+:root {
+  --primaryColour: #BEBEBE;
+}
+
+body {
+  background-color: #1b1c1c;
+  font-family: "Readex Pro";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bodyWrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.bgImage {
+  opacity: 0.11;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.bodyContent {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mobileNavbar {
+  padding-bottom: 20px;
+  place-content: space-between;
+}
+
+.mobileNavbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  place-content: space-between;
+}
+
+.mobileNavbar .menuOpen {
+  padding-top: 6px;
+  height: 14.69px;
+  width: 26.335px;
+  color: var(--primaryColour);
+  cursor: pointer;
+}
+
+.mobileNavbar .menuClose {
+  margin: 0%;
+  padding: 0%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobileNavbar .logo {
+  font-weight: bold;
+  color: white;
+  font-size: 19pt;
+  text-align: center;
+  display: center;
+}
+
+.mobileNavbar .mobileNavPlaceholder {
+  padding-top: 6px;
+  height: 14.69px;
+  width: 26.335px;
+}
+
+.mobileNavbar .desktopNavbar {
+  display: none;
+}
+
+.mobileNavbar nav.menu {
+  display: none;
+}
+
+.mobileNavbar nav.menu-btn {
+  display: block;
+}
+
+.mobileNavbar nav.menu {
+  position: fixed;
+  z-index: 999;
+  height: 100vh;
+  width: 66%;
+  left: 0;
+  top: 0;
+  background: #1a1d20;
+  padding: 1em;
+}
+
+.mobileNavbar ul.primaryNav {
+  padding-left: 10px;
+}
+
+.mobileNavbar ul.socials {
+  margin-top: 50px;
+  padding-left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobileNavbar ul.socials .instagramIcon {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.mobileNavbar ul.socials .facebookIcon {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.mobileNavbar ul.socials .snapchatIcon {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.mobileNavbar li {
+  list-style-type: none;
+}
+
+.mobileNavbar li a {
+  display: block;
+  padding: 10px;
+  margin-left: -10px;
+  font-size: 20pt;
+  color: white;
+}
+
+.mobileNavbar li a:hover {
+  background: black;
+  border-radius: 10px;
+}
+
+.hero .header {
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+  margin-top: 20px;
+}
+
+.hero .videoHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 23pt;
+  margin-top: 10px;
+  color: white;
+}
+
+.hero .videoHeader h1 {
+  padding-right: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: -10px auto 20px;
+}
+
+.hero .videoHeader i {
+  color: var(--primaryColour);
+}
+
+.hero .videoHeader i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.hero .footballHeroContainer {
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hero .footballHeroContainer .leftCol img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero .footballHeroContainer .rightCol img {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84%;
+  height: 56.8%;
+  border-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero .heading {
+  margin-top: 50px;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25pt;
+}
+
+.hero .text {
+  margin-top: 0;
+  color: var(--primaryColour);
+  font-size: 15pt;
+  margin-bottom: 40px;
+}
+
+.videosSection h2 {
+  color: white;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.videosSection .crossesSection, .videosSection .crossContainer {
+  display: -ms-grid;
+  display: grid;
+}
+
+.videosSection .shotStoppingSection, .videosSection .shotPage1, .videosSection .shotPage2 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.videosSection .onevOneSection, .videosSection .onevOneContainer {
+  display: -ms-grid;
+  display: grid;
+}
+
+.videosSection .dots {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 10px;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  color: var(--primaryColour);
+}
+
+.videosSection .dots .fa-circle {
+  margin-left: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.videosSection .current {
+  color: white;
+}
+
+.videosSection .hidden {
+  display: none;
+}
+
+.videosSection .thumbnailContainer {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  position: relative;
+}
+
+.videosSection .thumbnailContainer .thumbnail {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 185px;
+  width: 330px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.videosSection .thumbnailContainer .fa-play-circle {
+  position: absolute;
+  top: 50px;
+  right: 120px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+}
+
+.videosSection .thumbnailContainer .fa-play-circle:hover {
+  color: var(--primaryColour);
+}
+
+.footballInfo .infoHeading {
+  color: white;
+  font-size: 25pt;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.footballInfo .infoText {
+  color: var(--primaryColour);
+  margin-bottom: 5px;
+}
+
+.footballInfo .moreText {
+  display: none;
+}
+
+.footballInfo .infoText.showMore .moreText {
+  display: inline;
+}
+
+.footballInfo .moreInfoButton {
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto 0 auto;
+  height: 8%;
+  width: 8%;
+  cursor: pointer;
+}
+
+.footballInfo .moreInfoButton.rotateButton {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.videoButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4em;
+}
+
+.videoButton button {
+  background: var(--primaryColour);
+  width: 60%;
+  height: 3em;
+  border: none;
+  border-radius: 20px;
+  font-family: Readex Pro;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.videoButton button:hover {
+  background: white;
+}
+
+.contact .leftContact .profile {
+  height: 350px;
+  width: 318px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact .rightContact .formHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  margin-top: 33px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact .rightContact .contactForm {
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.contact .rightContact .contactForm label {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 13pt;
+}
+
+.contact .rightContact .contactForm input, .contact .rightContact .contactForm textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: var(--primaryColour);
+  width: 99%;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  padding: 5px 5px 10px 5px;
+  border-radius: 10px;
+  border: 1pt;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  resize: none;
+}
+
+.contact .rightContact .contactForm input[type="submit"] {
+  display: block;
+  border-radius: 50px;
+  margin: auto;
+  background-color: white;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  width: 90%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+hr.headerDivider {
+  display: none;
+}
+
+hr {
+  width: 92%;
+  border-width: 1pt;
+  margin-top: 60px;
+}
+
+footer, .bodyFooter {
+  font-family: "Readex Pro";
+  margin: 0;
+}
+
+footer .container, .bodyFooter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+footer .footerLeft, .bodyFooter .footerLeft {
+  color: var(--primaryColour);
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .footerLeft p, .bodyFooter .footerLeft p {
+  margin-top: 0px;
+}
+
+footer .footerRight, .bodyFooter .footerRight {
+  padding-left: 0px;
+}
+
+footer .footerRight ul.socials, .bodyFooter .footerRight ul.socials {
+  padding-left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+footer .footerRight ul.socials .instagramIcon, .bodyFooter .footerRight ul.socials .instagramIcon {
+  padding-left: 10px;
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+}
+
+footer .footerRight ul.socials .facebookIcon, .bodyFooter .footerRight ul.socials .facebookIcon {
+  height: 30px;
+  width: 30px;
+  padding-right: 12px;
+}
+
+footer .footerRight ul.socials .snapchatIcon, .bodyFooter .footerRight ul.socials .snapchatIcon {
+  height: 30px;
+  width: 30px;
+}
+
+footer .footerRight li, .bodyFooter .footerRight li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .mobileNavbar {
+    margin-top: 10px;
+  }
+  .mobileNavbar nav.menu {
+    width: 300px;
+    font-size: 20px;
+  }
+  .mobileNavbar nav.menu ul.primaryNav a {
+    font-size: 35px;
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .mobileNavbar nav.menu ul.primaryNav a:hover {
+    background: black;
+    border-radius: 10px;
+  }
+  .mobileNavbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    place-content: normal;
+  }
+  .mobileNavbar .desktopNavbar {
+    display: block;
+    position: relative;
+    left: 20%;
+  }
+  .mobileNavbar img.menuOpen {
+    margin-right: 10px;
+    height: 36px;
+    width: 38px;
+    padding-top: 5px;
+  }
+  .mobileNavbar a.logo {
+    font-size: 25pt;
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+  .mobileNavbar ul.primaryNavDesktop {
+    width: 40%;
+    margin: 1px;
+    padding: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    color: white;
+  }
+  .mobileNavbar ul.primaryNavDesktop a {
+    padding: 10px;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .mobileNavbar ul.primaryNavDesktop a:hover {
+    background: black;
+    border-radius: 10px;
+    border-color: black;
+  }
+  .hero .videoHeader {
+    font-size: 30px;
+  }
+  .hero .videoHeader i {
+    margin-left: 35px;
+    font-size: 40px;
+    margin-top: -10px;
+  }
+  .hero .videoHeader h1 {
+    padding-right: 65px;
+  }
+  .hero .footballHeroContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-items: space-between;
+  }
+  .hero .footballHeroContainer .leftCol {
+    width: 38%;
+  }
+  .hero .footballHeroContainer .leftCol img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    height: auto;
+  }
+  .hero .footballHeroContainer .rightCol {
+    width: 62%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero .footballHeroContainer .rightCol img {
+    display: block;
+    width: 95%;
+    height: auto;
+  }
+  .videosSection .thumbnailContainer .thumbnail {
+    height: 296px;
+    width: 528px;
+  }
+  .videosSection .thumbnailContainer .fa-play-circle {
+    top: 95px;
+    right: 213px;
+  }
+  .footballInfo .infoText {
+    font-size: 15pt;
+  }
+  .contact .rightContact {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .contact .rightContact .contactForm input[type="submit"] {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .hero .text {
+    margin-bottom: 60px;
+  }
+  .hero .videoHeader i {
+    margin-left: 5px;
+  }
+  .hero .footballHeroContainer .leftCol {
+    width: 40%;
+  }
+  .hero .footballHeroContainer .leftCol img {
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 150px;
+  }
+  .hero .footballHeroContainer .rightCol {
+    width: 60%;
+  }
+  .hero .footballHeroContainer .rightCol img {
+    width: 75%;
+  }
+  .footballInfo .infoText {
+    font-size: 18pt;
+  }
+  .footballInfo .moreInfoButton {
+    height: 5%;
+    width: 5%;
+  }
+  .contact .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5%;
+  }
+  .contact .leftContact {
+    width: 50%;
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+  .contact .rightContact {
+    width: 50%;
+    padding-right: 20px;
+  }
+  .contact .rightContact .formHeading {
+    margin-top: 15px;
+  }
+  .contact .rightContact .contactForm input[type="submit"] {
+    background-color: var(--primaryColour);
+  }
+  .contact .rightContact .contactForm input[type="submit"]:hover {
+    background-color: white;
+  }
+  .videoButton {
+    margin-top: 5em;
+    margin-bottom: 30px;
+  }
+  .videoButton button {
+    width: 500px;
+  }
+  .videosSection h2 {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  .videosSection .hidden {
+    display: inline;
+  }
+  .videosSection .shotPage1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .videosSection .shotPage2 {
+    display: none;
+  }
+  .videosSection .onevOneContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .videosSection .crossContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .videosSection .thumbnailContainer {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  .videosSection .thumbnailContainer .thumbnail {
+    height: 185px;
+    width: 330px;
+  }
+  .videosSection .thumbnailContainer .fa-play-circle {
+    top: 50px;
+    right: 120px;
+  }
+  .videosSection .dots {
+    display: none;
+  }
+  hr {
+    width: 1080px;
+    border-width: 1px;
+  }
+  hr.headerDivider {
+    display: block;
+    margin-bottom: 40px;
+    margin-top: -25px;
+  }
+  footer, .bodyFooter {
+    margin-bottom: 10px;
+  }
+  footer .container, .bodyFooter .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 10px;
+  }
+  footer .footerLeft, .bodyFooter .footerLeft {
+    width: 50%;
+  }
+  footer .footerLeft p, .bodyFooter .footerLeft p {
+    margin: 0px;
+    text-align: left;
+  }
+  footer .footerRight, .bodyFooter .footerRight {
+    width: 50%;
+  }
+  footer .footerRight ul.socials, .bodyFooter .footerRight ul.socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px;
+    place-content: end;
+  }
+}
+
+@media only screen and (min-width: 1670px) {
+  .contact {
+    margin-bottom: 7%;
+  }
+  .videoButton {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

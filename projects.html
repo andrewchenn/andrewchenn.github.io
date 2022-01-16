@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menuCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+
+            $("#menuCloseCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+        })
+    </script>
+</head>
+
+
+<body>
+    <div class="bodyWrap">
+        <img class="bgImage" src="images/6024826.jpg" alt="Background Image">
+        <div class="bodyContent"> 
+            <section class="mobileNavbar">   
+                <div class="container">
+                    <img href="javascript:void(0)" id="menuCta" class="menuOpen" src="images/HamburgerIcon.svg" alt="menuOpenIcon">
+                    <a class="logo" href="index.html">AC</a>
+                    <div class="mobileNavPlaceholder"></div>
+                    <nav class= "desktopNavbar">
+                        <ul class="primaryNavDesktop">
+                            <li><a href="football.html">Football</a></li>
+                            <li class= "current"><a href="projects.html">Projects</a></li>
+                            <li><a href="setup.html">Setup</a></li>
+                        </ul>
+                    </nav>
+                    <nav class= "menu" id="navMenu">
+                        <img id="menuCloseCta" class="menuClose" src="images/5299154331543238955.svg" alt="menuOpenIcon">
+                        <ul class="primaryNav">
+                            <li> <a href="football.html">Football</a></li>
+                            <li class= "current"><a href="projects.html">Projects</a></li>
+                            <li><a href="setup.html">Setup</a></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                            <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                            <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            
+            <section class="hero">
+                <div class="container">
+                    <div class="leftCol">
+                        <h1 class="heading">Hi, I'm Andrew,</h1>
+                        <p class="text">
+                            A footballer, student and avid tech enthusiast based in Newcastle, Australia.
+                            I currently attend Merewether High School as a year 9 student and I love learning new 
+                            things everyday. When I'm not in school, I'll either be playing football, where I'm
+                            apart of the Newcastle Jets Academy, or I will be at my desk browsing new technologies 
+                            and coding away on my keyboard.
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        
+            <section class="contact">
+                <div class="container">
+                    <div class="leftContact">
+                        <img class="profile" src="images/profile.jpg" alt="profilePhoto">
+                    </div>
+                    <div class="rightContact">
+                        <h2 class="formHeading">Contact:</h2>
+                        <form class= "contactForm" action="">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+        
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+        
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="8"></textarea>
+        
+                            <input type="submit" class="contactCta" value="Send Message!">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </div> 
+
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="footerLeft">
+            <p>@2021 Andrew Chen. All Rights Reserved</p>
+        </div>
+        <div class="footerRight">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>

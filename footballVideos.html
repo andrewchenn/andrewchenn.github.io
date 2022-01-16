@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA+0lEQVRIie2UsUoDQRCGv9kVgqRYV2M4QQWFlL6BT6D2lnb3BgHL2NlZ2/oO4sOIIFwgl2BxJ4gE5MbqEkXQO28DAf2qYXfn/7aZgX9+QMpikudHRuUadLth5NCIxuvO3X0SPGXPSfPwGUlnze0CmPlZsHCAnbIw370KwXIIrBZ7KGcoo4UIvPePHe9u3qavPVUugGlQQUkURS+b3g0K4UCU2+CCkq5z9xvenQh6uhBBHVZ+0zTJ854tuFI4DipI07RtW6t9Uc5VaFXpqSQYZ9m+VTkELhG26nyqksAiD/OtVY/lmORAAhkGzE2+CIxo/PGiSbgIcYCcv8I7q/k8k1imFakAAAAASUVORK5CYII=">
+    <script src="https://kit.fontawesome.com/f127391619.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="swipeListener/swiped-events.min.js"></script>
+    <script> //script for mobile navbar transition.
+        $(document).ready(function(){
+            $("#menuCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+
+            $("#menuCloseCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+        })
+    </script> 
+
+</head>
+
+<body> 
+    <div class="bodyWrap">
+        <img class="bgImage" src="images/6024826.jpg" alt="Background Image">
+        <div class="bodyContent"> 
+            <section class="mobileNavbar">   
+                <div class="container">
+                    <img href="javascript:void(0)" id="menuCta" class="menuOpen" src="images/HamburgerIcon.svg" alt="menuOpenIcon">
+                    <a class="logo" href="index.html">AC</a>
+                    <div class="mobileNavPlaceholder"></div>
+                    <nav class= "desktopNavbar">
+                        <ul class="primaryNavDesktop">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="football.html">Football</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                        </ul>
+                    </nav>
+                    <nav class= "menu" id="navMenu">
+                        <img id="menuCloseCta" class="menuClose" src="images/5299154331543238955.svg" alt="menuOpenIcon">
+                        <ul class="primaryNav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="football.html">Football</a></li>
+                            <li><a href="projects.html">Projects</a></li>  
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                            <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                            <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <hr class="headerDivider">
+            <section class="hero">
+                <div class="container videoHeader">
+                    <i class="fas fa-arrow-circle-left" onclick="history.back()"></i>
+                    <h1 class="header">Videos</h1>
+                </div>  
+            </section>
+            <section class="videosSection">     <!--section for the whole video gallery--> 
+                <div class="container">     <!--container to keep the whole thing withing desktop media query-->
+                    <div class="shotStoppingSection"> <!--container for each topic of videos-->
+                        <h2 class="videoSectionHeadings">Shot Stopping:</h2>
+                        <div class="shotPage1">
+                            <div class="thumbnailContainer shotStoppingVideo">
+                                <img class="thumbnail" src="images/edgeworth18s.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/Zxc6pzv0DmU"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer shotStoppingVideo hidden">
+                                <img class="thumbnail" src="images/u14sSave.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/D7mdWCOgQvM"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer shotStoppingVideo hidden">
+                                <img class="thumbnail" src="images/edgeworth15s.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/VcjtxhQWUTk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                        <div class="shotPage2">
+                            <div class="thumbnailContainer shotStoppingVideo hidden">
+                                <img class="thumbnail" src="images/trainingSave.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/ce0bcXrn4BY"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="dots">
+                            <i class="fas fa-circle shotStoppingDot current" onclick="changeSlidesShotDot(1)"></i>
+                            <i class="fas fa-circle shotStoppingDot" onclick="changeSlidesShotDot(2)"></i>
+                            <i class="fas fa-circle shotStoppingDot" onclick="changeSlidesShotDot(3)"></i>
+                            <i class="fas fa-circle shotStoppingDot" onclick="changeSlidesShotDot(4)"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="onevOneSection">
+                        <h2 class="videoSectionHeadings">1v1s:</h2>
+                        <div class="onevOneContainer">
+                            <div class="thumbnailContainer oneVideo">
+                                <img class="thumbnail" src="images/hawks.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/s-lI58wgHxE"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer oneVideo hidden">
+                                <img class="thumbnail" src="images/dulwich.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/tGgNEw2fnz8"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer oneVideo hidden">
+                                <img class="thumbnail" src="images/trainingCross.jpg" alt="thumbnail">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="dots">
+                                <i class="fas fa-circle oneDot current" onclick="changeSlidesOneDot(1)"></i>
+                                <i class="fas fa-circle oneDot" onclick="changeSlidesOneDot(2)"></i>
+                                <i class="fas fa-circle oneDot" onclick="changeSlidesOneDot(3)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crossesSection">
+                        <h2 class="videoSectionHeadings">Dealing With Crosses: </h2>
+                        <div class="crossContainer">
+                            <div class="thumbnailContainer crossVideo">
+                                <img class="thumbnail" src="images/parramattaCross.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/kRkvnBjhvgQ"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer crossVideo hidden">
+                                <img class="thumbnail" src="images/u14Cross.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/KiwNCI2m2YE"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="thumbnailContainer crossVideo hidden">
+                                <img class="thumbnail" src="images/trainingCross.jpg" alt="thumbnail">
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/_4crIzEDKMY"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="dots">
+                                <i class="fas fa-circle crossDot current" onclick="changeSlidesCrossDot(1)"></i>
+                                <i class="fas fa-circle crossDot" onclick="changeSlidesCrossDot(2)"></i>
+                                <i class="fas fa-circle crossDot" onclick="changeSlidesCrossDot(3)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </div> 
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
+    <script>    //initializes venobox
+        new VenoBox(); 
+    </script>
+    <script type="text/javascript" src="videoGalleryScripts/crossesSection.js"></script>
+    <script type="text/javascript" src="videoGalleryScripts/shotStopping.js"></script>
+    <script type="text/javascript" src="videoGalleryScripts/oneVOne.js"></script>
+</body>
+<hr>
+<footer class="footer">
+    <div class="container">
+        <div class="footerLeft">
+            <p>@2021 Andrew Chen. All Rights Reserved</p>
+        </div>
+        <div class="footerRight">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                <li> <a href="https://www.facebook.com/andrewchen82"><img  src="images/icons8-facebook.svg" alt="facebookIcon" class="facebookIcon"></a></li>
+                <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>

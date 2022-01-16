@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> //script for mobile navbar transition.
+        $(document).ready(function(){
+            $("#menuCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+
+            $("#menuCloseCta").click(function(){
+                $("#navMenu").fadeToggle("fast");
+            })
+            
+            $("#moreInfoButton").click(function(){
+                $("#moreText").toggle();
+                $("#moreInfoButton").toggleClass("rotateButton");
+            })
+
+        })
+    </script>
+</head>
+
+
+<body>
+    <div class="bodyWrap">
+        <img class="bgImage" src="images/6024826.jpg" alt="Background Image">
+        <div class="bodyContent"> 
+            <section class="mobileNavbar">   
+                <div class="container">
+                    <img href="javascript:void(0)" id="menuCta" class="menuOpen" src="images/HamburgerIcon.svg" alt="menuOpenIcon">
+                    <a class="logo" href="index.html">AC</a>
+                    <div class="mobileNavPlaceholder"></div>
+                    <nav class= "desktopNavbar">
+                        <ul class="primaryNavDesktop">
+                            <li><a href="index.html">Home</a></li>
+                            <li class= "current"> <a href="football.html">Football</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                        </ul>
+                    </nav>
+                    <nav class= "menu" id="navMenu">
+                        <img id="menuCloseCta" class="menuClose" src="images/5299154331543238955.svg" alt="menuOpenIcon">
+                        <ul class="primaryNav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class= "current"><a href="football.html">Football</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                            <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                            <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <hr class="headerDivider">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="header">Football</h1>
+                    <div class="footballHeroContainer">
+                        <div class="leftCol">
+                            <img src="images/footballProfile.JPG" alt="footballProfile">
+                        </div>
+                        <div class="rightCol">
+                            <img src="images/footballAction.jpg" alt="footballAction">
+                        </div>
+                    </div>
+                </div>  
+            </section>
+
+            <section class="footballInfo">
+                <div class="container">
+                    <h1 class="infoHeading">Info:</h1>
+                    <p class="infoText" id="infoText">
+                        Football has been a major part of my life since I was 8, where I started playing for my local club, Wallsend Red Devils. 
+                        I remember going in goals for the first match I played and I must have performed really well, because I ended up as the goalkeeper for the rest of the season. 
+                        In 2016 I got selected to join the Newcastle Football Summer Program, where I then was fortunate enough to earn a place at Hamilton Olympic in their NET squads 
+                        for the next 2 years. My last year at Hamilton Olympic was in 2018, where I was dropped from the club after a series of poor performances the prior season.
+                        <span id="moreText" class="moreText"> I needed to improve my distribution extensively if I even wanted a chance to play at NPL level the next year, so during that off-season, I worked as hard as I 
+                        could with the help of Jets Academy goalkeeper coach, Andrew (Goldie) Goldman, to earn a place in next years competition. I ended up making it into the 
+                        Charlestown City Blues u13 squad for the 2019 season and I regained my confidence to play at a high level. Then, following a series of good performances near the
+                        end of the season, I received an offer from Goldie to trial at the Jets Academy to potentially play in their u13 National Youth Championship squad. After some 
+                        more good performances, I was selected and made the 5 hour journey down to Coffs Harbour to play against the best of my age group. Despite not doing so well at 
+                        Nationals, It was deemed that I showed some good qualities during that tournament and was then selected to play for the Jets Academy for the next years and I 
+                        have been their ever since. This year I am still at the Jets Academy, however I am out on loan to Valentine Eleebana FC in hopes to get more quality playing 
+                        time. I am training twice a week with Jets and twice a week with Valo in the hopes of getting the most improvement.
+                    </span>
+                    </p>
+                    <img class="moreInfoButton" id="moreInfoButton" src="images/chevron-down.svg" alt="moreInfoButton">
+                </div>
+            </section>
+            
+            <section class="videoButton">
+                <button onclick="document.location='footballVideos.html'">Videos</button>
+            </section>
+        </div>    
+    </div> 
+
+</body>
+<hr>
+<footer class="footer">
+    <div class="container">
+        <div class="footerLeft">
+            <p>@2021 Andrew Chen. All Rights Reserved</p>
+        </div>
+        <div class="footerRight">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/andrewchenn82/"><img src="images/icons8-instagram.svg" alt="instagramIcon" class="instagramIcon"></a></li>
+                <li> <a href="https://www.facebook.com/andrewchen82"><img class="facebookIcon" src="images/icons8-facebook.svg" alt="facebookIcon"></a></li>
+                <li><a href="https://www.snapchat.com/add/andrewchen_82"><img src="images/icons8-snapchat.svg" alt="snapchatIcon" class="snapchatIcon"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</html>
