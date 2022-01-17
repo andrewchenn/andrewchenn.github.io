@@ -361,7 +361,7 @@ hr{
     border-width: 1pt;
     margin-top: 60px;
 }
-footer, .bodyFooter{
+footer{
     font-family: "Readex Pro";
     margin: 0;
     .container{
@@ -537,7 +537,7 @@ footer, .bodyFooter{
 }
 
 @media only screen and (min-width: 1080px){
-    .container{
+    section, .container{
         width: 1080px;
         margin: 0 auto;
     }
@@ -655,7 +655,7 @@ footer, .bodyFooter{
         margin-bottom: 40px;
         margin-top: -25px;
     }
-    footer, .bodyFooter{
+    footer{
         margin-bottom: 10px;
         .container{
             display: flex;

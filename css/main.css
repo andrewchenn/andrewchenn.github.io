@@ -443,12 +443,12 @@ hr {
   margin-top: 60px;
 }
 
-footer, .bodyFooter {
+footer {
   font-family: "Readex Pro";
   margin: 0;
 }
 
-footer .container, .bodyFooter .container {
+footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,21 +458,21 @@ footer .container, .bodyFooter .container {
           flex-direction: column-reverse;
 }
 
-footer .footerLeft, .bodyFooter .footerLeft {
+footer .footerLeft {
   color: var(--primaryColour);
   text-align: center;
   margin-top: 10px;
 }
 
-footer .footerLeft p, .bodyFooter .footerLeft p {
+footer .footerLeft p {
   margin-top: 0px;
 }
 
-footer .footerRight, .bodyFooter .footerRight {
+footer .footerRight {
   padding-left: 0px;
 }
 
-footer .footerRight ul.socials, .bodyFooter .footerRight ul.socials {
+footer .footerRight ul.socials {
   padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,25 +482,25 @@ footer .footerRight ul.socials, .bodyFooter .footerRight ul.socials {
   margin-top: 25px;
 }
 
-footer .footerRight ul.socials .instagramIcon, .bodyFooter .footerRight ul.socials .instagramIcon {
+footer .footerRight ul.socials .instagramIcon {
   padding-left: 10px;
   height: 30px;
   width: 30px;
   padding-right: 10px;
 }
 
-footer .footerRight ul.socials .facebookIcon, .bodyFooter .footerRight ul.socials .facebookIcon {
+footer .footerRight ul.socials .facebookIcon {
   height: 30px;
   width: 30px;
   padding-right: 12px;
 }
 
-footer .footerRight ul.socials .snapchatIcon, .bodyFooter .footerRight ul.socials .snapchatIcon {
+footer .footerRight ul.socials .snapchatIcon {
   height: 30px;
   width: 30px;
 }
 
-footer .footerRight li, .bodyFooter .footerRight li {
+footer .footerRight li {
   list-style-type: none;
 }
 
@@ -625,7 +625,7 @@ footer .footerRight li, .bodyFooter .footerRight li {
 }
 
 @media only screen and (min-width: 1080px) {
-  .container {
+  section, .container {
     width: 1080px;
     margin: 0 auto;
   }
@@ -745,10 +745,10 @@ footer .footerRight li, .bodyFooter .footerRight li {
     margin-bottom: 40px;
     margin-top: -25px;
   }
-  footer, .bodyFooter {
+  footer {
     margin-bottom: 10px;
   }
-  footer .container, .bodyFooter .container {
+  footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -758,17 +758,17 @@ footer .footerRight li, .bodyFooter .footerRight li {
             flex-direction: row;
     padding-top: 10px;
   }
-  footer .footerLeft, .bodyFooter .footerLeft {
+  footer .footerLeft {
     width: 50%;
   }
-  footer .footerLeft p, .bodyFooter .footerLeft p {
+  footer .footerLeft p {
     margin: 0px;
     text-align: left;
   }
-  footer .footerRight, .bodyFooter .footerRight {
+  footer .footerRight {
     width: 50%;
   }
-  footer .footerRight ul.socials, .bodyFooter .footerRight ul.socials {
+  footer .footerRight ul.socials {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
