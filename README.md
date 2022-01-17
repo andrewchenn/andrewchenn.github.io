@@ -2,6 +2,9 @@
 My first portfolio website. 
 
 Made with:
-  -HTML
-  -SASS CSS
-  -Javascript & Jquery
+
+    -HTML
+
+    -SASS CSS
+
+    -Javascript & Jquery
