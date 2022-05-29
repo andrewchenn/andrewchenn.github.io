@@ -550,6 +550,9 @@ footer{
         } 
     }
     .videosSection{
+        .shotPage1, .shotPage2, .onevOneContainer, .crossContainer{
+            width: 528px;
+        }
         .thumbnailContainer{
             .thumbnail{
                 height: 296px;
@@ -659,6 +662,9 @@ footer{
         }
         .hidden{
             display: inline;
+        }
+        .shotPage1, .shotPage2, .onevOneContainer, .crossContainer{
+            width: 1080px;
         }
         .shotPage1{
             display: flex;

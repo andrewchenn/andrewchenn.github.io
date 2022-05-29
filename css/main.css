@@ -27,13 +27,6 @@
   }
 }
 
-:root .slowFade {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
 body {
   background-color: #1b1c1c;
   font-family: "Readex Pro";
@@ -679,6 +672,9 @@ footer .footerRight li {
     width: 95%;
     height: auto;
   }
+  .videosSection .shotPage1, .videosSection .shotPage2, .videosSection .onevOneContainer, .videosSection .crossContainer {
+    width: 528px;
+  }
   .videosSection .thumbnailContainer .thumbnail {
     height: 296px;
     width: 528px;
@@ -769,6 +765,9 @@ footer .footerRight li {
   }
   .videosSection .hidden {
     display: inline;
+  }
+  .videosSection .shotPage1, .videosSection .shotPage2, .videosSection .onevOneContainer, .videosSection .crossContainer {
+    width: 1080px;
   }
   .videosSection .shotPage1 {
     display: -webkit-box;
