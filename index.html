@@ -23,9 +23,10 @@
             })
         })
     </script>
+ 
 </head>
 <body>
-    <div class="bodyWrap">
+    <div class="bodyWrap fade">
         <img class="bgImage" src="images/6024826.jpg" alt="Background Image">
         <div class="bodyContent"> 
             <section class="mobileNavbar">   
@@ -73,7 +74,7 @@
             <section class="contact">
                 <div class="container">
                     <div class="leftContact">
-                        <img class="profile" src="images/profile.jpg" alt="profilePhoto">
+                        <img class="profile" src="images/profile.jpg" alt="profilePhoto" onload="fadeIn(this)">
                     </div>
                     <div class="rightContact">
                         <h2 class="formHeading">Contact:</h2>
@@ -93,6 +94,12 @@
                 </div>
             </section>
             <hr>
+    <script>
+        // this function must be defined in the global scope
+        window.fadeIn = function(obj) {
+            $(obj).fadeIn(12000);
+        }
+    </script>           
 </body>
 <footer class="footer">
     <div class="container">
