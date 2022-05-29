@@ -19,6 +19,28 @@ if(oneMatchMedia.matches){
         oneSlide[oneSlideIndex-1].style.display = "block"
         currentOneDot()
     }
+    function plusOneSlide(){
+        oneSlideIndex += 1;
+            if (oneSlideIndex > oneSlide.length) {
+                oneSlideIndex = 1;
+            }
+            for (i=0; i<oneSlide.length; i++){
+                oneSlide[i].style.display = "none"
+            }
+            oneSlide[oneSlideIndex-1].style.display = "block"
+            currentOneDot()
+    }
+    function minusOneSlide(){
+        oneSlideIndex -= 1;
+        if (oneSlideIndex < 1) {
+            oneSlideIndex = oneSlide.length;
+        }
+        for (i=0; i<oneSlide.length; i++){
+            oneSlide[i].style.display = "none"
+        }
+        oneSlide[oneSlideIndex-1].style.display = "block"
+        currentOneDot()
+    }
     for (var i = 0 ; i < oneSlide.length; i++) {
         oneSlide[i].addEventListener('swiped-right', function(){
             oneSlideIndex -= 1;
